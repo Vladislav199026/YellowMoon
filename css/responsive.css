@@ -1,0 +1,219 @@
+@media (max-width: 1186px) {
+  body,
+  .logo-nav,
+  .about-us,
+  .about-us ul,
+  .random-text,
+  .portfolio,
+  .clients,
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 1110px) {
+  .portfolio {
+    /* height: 1156px; */
+    height: 100%;
+    margin: 120px 0px;
+  }
+  .portfolio ul {
+    margin-top: 60px;
+  }
+  .logo-nav,
+  .about-us,
+  .portfolio,
+  .clients,
+  .wrapper-forms,
+  footer {
+    padding: 0px 5px;
+  }
+}
+@media (max-width: 990px) {
+  .wrapper-forms {
+    width: 100%;
+  }
+  .name,
+  .mail {
+    width: 49%;
+  }
+  .checkbox-btn,
+  .radio-btn {
+    width: 48%;
+  }
+}
+@media (max-width: 890px) {
+  .about-us ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .about-us ul strong {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .about-us ul p {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .container-for-checkbox:last-child,
+  .container-for-radio:last-child {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 850px) {
+  .portfolio ul {
+    justify-content: space-around;
+  }
+  .portfolio {
+    margin: 60px 0px;
+  }
+  .logo-nav {
+    justify-content: center;
+  }
+  /******************* burger *******************/
+
+  .main-nav input[type="checkbox"]:checked ~ ul {
+    background: #ffe600;
+    transform: none;
+  }
+  .main-nav input[type="checkbox"] {
+    position: absolute;
+    top: -9999px;
+  }
+
+  .burger {
+    position: relative;
+  }
+  .main-nav ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+    height: 100vh;
+    background: #ffe600;
+    z-index: 10;
+    width: 100%;
+    align-items: center;
+    transform: translate(0, -100vh);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .burger span {
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background: #ffe600;
+    border: 1px solid #000;
+    position: absolute;
+    left: 0px;
+    transition: all 0.4s ease;
+  }
+  .burger span:first-child {
+    top: 0px;
+  }
+  .burger span:nth-child(2) {
+    top: 12px;
+  }
+  .burger span:last-child {
+    top: 24px;
+  }
+  .main-nav input[type="checkbox"]:checked + label span:first-child {
+    top: 14px;
+    transform: rotate(-315deg);
+  }
+  .main-nav input[type="checkbox"]:checked + label span:last-child {
+    top: 14px;
+    transform: rotate(-225deg);
+  }
+  .main-nav input[type="checkbox"]:checked + label span:nth-child(2) {
+    transform: translate(100px, 0);
+    transition: transform 1s ease;
+  }
+  .main-nav ul li {
+    margin-bottom: 50px;
+  }
+  .main-nav ul a {
+    font-size: 35px;
+    color: #ffe600;
+    -webkit-text-stroke: 1px #000;
+    padding: 0;
+  }
+  .main-nav ul a:not(.active) {
+    color: #131316;
+    font-size: 35px;
+    padding: 0;
+  }
+  .logo-nav nav a:hover {
+    /* color: #131316; */
+
+    color: #ffe600;
+    -webkit-text-stroke: 1px #000;
+  }
+  .burger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 35px;
+    width: 35px;
+    z-index: 11;
+    cursor: pointer;
+  }
+}
+@media (max-width: 760px) {
+  .checkbox-btn,
+  .radio-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .container-for-checkbox:first-child,
+  .container-for-radio:first-child {
+    padding-bottom: 15px;
+    padding-right: 0px;
+  }
+  .clients ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .clients ul li {
+    padding-bottom: 40px;
+    min-width: 120px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer strong {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .contact {
+    padding: 60px 0px 45px;
+  }
+  fieldset {
+    margin-bottom: 60px;
+  }
+  .random-text h2 {
+    font-size: 20px;
+  }
+  .intro h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .random-text strong {
+    text-align: center;
+  }
+}
